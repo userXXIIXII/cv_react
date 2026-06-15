@@ -1,18 +1,15 @@
-import aboutPic from '../assets/about.jpg'
+import aboutPic from '../assets/john-doe-about.jpg';
+import { useSkills } from '../data/useSKills';
 
 function AboutSkills() {
-    const skills = [
-        { name: "HTML5", percentage: 90, color: "bg-red-500"},
-        { name: "CSS3", percentage: 80, color: "bg-cyan-500"},
-        { name: "JAVASCRIPT", percentage: 70, color: "bg-yellow-500"},
-        { name: "PHP", percentage: 60, color: "bg-green-500"},
-        { name: "REACT", percentage: 50, color: "bg-blue-500"}
-    ];
+
+    const { skills } = useSkills();
 
     return (
         <section className="py-16 px-6 bg-gray-50">
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
 
+                {/* Partie À Propos */}
                 <div>
                     <h2 className="text-3xl font-semibold mb-4 text-[#1e1e1e]">
                         A propos
@@ -35,8 +32,39 @@ function AboutSkills() {
                     </p>
                 </div>
                 
+                {/* Partie Compétences */}
+                <div>
+                    <img 
+                    src={aboutPic}
+                    alt="A propos de moi"
+                    className='rounded-lg shadow-md mb-8 w-full h-64 object-cover'
+                    />
+                    <h3 className="text-2xl font-semibold mb-6 text-[#1e1e1e]">
+                        Mes compétences
+                    </h3>
+
+                    <div className="space-y-6">
+                        {skills.map((skill) => (
+                            <div key={skill.name}>
+                                <div className="flex justify-between mb-2">
+                                    <span className='className="font-semibold text-sm'>
+                                        {skill.name}
+                                    </span>
+                                    <span className='text-sm text-gray-600'>
+                                        {skill.percentage}%
+                                    </span>
+                                </div>
+                                <div className="w-full bg-gray-200 h-3 rounded-full overflow-hidden">
+                                    <div 
+                                    className={`${skill.color} h-3 rounded-full transition-all duration-500`}
+                                    style={{ width: `${skill.percentage}%` }}>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
-            
         </section>
     );
 }
