@@ -31,11 +31,37 @@ function Navbar() {
             {/* Menu Mobile (visible uniquement si ouvert) */}
             {isOpen && (
                 <div className="md:hidden mt-4 flex flex-col space-y-2">
-                    <Link to="/" className="block py-2 hover:bg-gray-800" onClick={() => setIsOpen(false)}>ACCUEIL</Link>
-                    <Link to="/services" className="block py-2 hover:bg-gray-800" onClick={() => setIsOpen(false)}>SERVICES</Link>
-                    <Link to="/realisations" className="block py-2 hover:bg-gray-800" onClick={() => setIsOpen(false)}>RÉALISATIONS</Link>
-                    <Link to="/blog" className="block py-2 hover:bg-gray-800" onClick={() => setIsOpen(false)}>BLOG</Link>
-                    <Link to="/contact" className="block py-2 hover:bg-gray-800" onClick={() => setIsOpen(false)}>CONTACT</Link>
+                    <Link
+                    to="/" 
+                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    onClick={() => setIsOpen(false)}
+                    >
+                        ACCUEIL
+                    </Link>
+                    <Link 
+                    to="/services" 
+                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    onClick={() => setIsOpen(false)}>
+                        SERVICES
+                    </Link>
+                    <Link 
+                    to="/realisations" 
+                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    onClick={() => setIsOpen(false)}>
+                        RÉALISATIONS
+                    </Link>
+                    <Link 
+                    to="/blog" 
+                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    onClick={() => setIsOpen(false)}>
+                        BLOG
+                    </Link>
+                    <Link 
+                    to="/contact" 
+                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    onClick={() => setIsOpen(false)}>
+                        CONTACT
+                    </Link>
                 </div>
             )}
         </nav>
