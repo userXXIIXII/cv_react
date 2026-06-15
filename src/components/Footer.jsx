@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -12,9 +13,28 @@ function Footer() {
                     <p className="mt-2">Téléphone : 06 50 24 13 97</p>
                 
                     <div className="flex space-x-4 mt-4">
-                        <a href="https://github.com/userXXIIXII">GitHub</a>
-                        <a href="https://www.instagram.com/aarin_dev/">Instagram</a>
-                        <a href="www.linkedin.com/in/aarin-deb">LinkedIn</a>
+
+                        <a href="https://github.com/userXXIIXII" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-[#444] hover:text-[#0d6efd] text-2xl">
+                            <FaGithub />
+                        </a>
+
+                        <a href="https://www.instagram.com/aarin_dev/" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-[#444] hover:text-[#0d6efd] text-2xl">
+                            <FaInstagram />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/aarin-deb" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="text-[#444] hover:text-[#0d6efd] text-2xl">
+                            <FaLinkedin />
+                        </a>
+
                     </div>
                 </div>
             
