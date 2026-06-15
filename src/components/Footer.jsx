@@ -23,11 +23,31 @@ function Footer() {
                 <div>
                     <h3 className="font-bold text-lg mb-4 text-[#1e1e1e]">Liens utiles</h3>
                     <ul className="space-y-2">
-                        <li><Link to="/" className="hover:text-[#0d6efd]">Accueil</Link></li>
-                        <li><Link to="/Services" className="hover:text-[#0d6efd]">Services</Link></li>
-                        <li><Link to="/Realisations" className="hover:text-[#0d6efd]">Réalisations</Link></li>
-                        <li><Link to="/Blog" className="hover:text-[#0d6efd]">Blog</Link></li>
-                        <li><Link to="/Contact" className="hover:text-[#0d6efd]">Contact</Link></li>
+                        <li>
+                            <Link to="/" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Accueil
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Services" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Services
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Realisations" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Réalisations
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Blog" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/Contact" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Contact
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -35,9 +55,21 @@ function Footer() {
                 <div>
                     <h3 className="font-bold text-lg mb-4 text-[#1e1e1e]">Mes derniers réalisations</h3>
                     <ul className="space-y-2">
-                        <li><Link className="hover:text-[#0d6efd]">Fresh food</Link></li>
-                        <li><Link className="hover:text-[#0d6efd]">Restaurant Akira</Link></li>
-                        <li><Link className="hover:text-[#0d6efd]">Espace bien-être</Link></li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Fresh food
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Restaurant Akira
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Espace bien-être
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
@@ -45,12 +77,29 @@ function Footer() {
                 <div>
                     <h3 className="font-bold text-lg mb-4 text-[#1e1e1e]">Mes derniers articles</h3>
                     <ul className="space-y-2">
-                        <li><Link className="hover:text-[#0d6efd]">Coder son site en HTML/CSS</Link></li>
-                        <li><Link className="hover:text-[#0d6efd]">Vendre ses produits sur le web</Link></li>
-                        <li><Link className="hover:text-[#0d6efd]">Se positionner sur Google</Link></li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Coder son site en HTML/CSS
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Vendre ses produits sur le web
+                            </Link>
+                        </li>
+                        <li>
+                            <Link className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Se positionner sur Google
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>
+            
+            <div className="bg-[#1e1e1e] text-white text-center py-4 text-sm border-b-20 border-white">
+                © Designed by Aarin DEB
+            </div>
+            
         </footer>
     );
 }
