@@ -6,11 +6,11 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-900 text-white p-4">
+        <nav className="bg-[#1e1e1e] text-white p-4">
             <div className="container mx-auto flex justify-between">
                 <h2 className="text-xl font-bold">Aarin DEB</h2>
 
-                {/* Menu Desktop (visible sur md et plus) */}
+                {/* Menu Desktop */}
                 <div className="hidden md:flex space-x-6">
                     <Link to="/" className="hover:text-blue-400">ACCUEIL</Link>
                     <Link to="/services" className="hover:text-blue-400">SERVICES</Link>
