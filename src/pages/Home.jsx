@@ -1,4 +1,5 @@
 import homeBackground from '../assets/hero-bg.jpg';
+import AboutSkills from '../components/AboutSkills';
 
 function Home() {
     return (
@@ -22,6 +23,8 @@ function Home() {
                     </button>
                 </div>
             </section>
+
+            <AboutSkills />
         </main>
     );
 }
