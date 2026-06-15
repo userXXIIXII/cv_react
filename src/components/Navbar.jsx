@@ -12,11 +12,11 @@ function Navbar() {
 
                 {/* Menu Desktop */}
                 <div className="hidden md:flex space-x-6">
-                    <Link to="/" className="hover:text-blue-400">ACCUEIL</Link>
-                    <Link to="/services" className="hover:text-blue-400">SERVICES</Link>
-                    <Link to="/realisations" className="hover:text-blue-400">RÉALISATIONS</Link>
-                    <Link to="/blog" className="hover:text-blue-400">BLOG</Link>
-                    <Link to="/contact" className="hover:text-blue-400">CONTACT</Link>
+                    <Link to="/" className="hover:text-[#0d6efd] uppercase">Accueil</Link>
+                    <Link to="/services" className="hover:text-[#0d6efd] uppercase">Services</Link>
+                    <Link to="/realisations" className="hover:text-[#0d6efd] uppercase">Réalisations</Link>
+                    <Link to="/blog" className="hover:text-[#0d6efd] uppercase">Blog</Link>
+                    <Link to="/contact" className="hover:text-[#0d6efd] uppercase">Contact</Link>
                 </div>
             
 
