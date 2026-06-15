@@ -6,10 +6,13 @@ import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <Navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
