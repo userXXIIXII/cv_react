@@ -30,6 +30,16 @@ function Footer() {
                         <li><Link to="/Contact" className="hover:text-[#0d6efd]">Contact</Link></li>
                     </ul>
                 </div>
+
+                {/* Colonne 3 : Dernières réalisations */}
+                <div>
+                    <h3 className="font-bold text-lg mb-4 text-[#1e1e1e]">Mes derniers articles</h3>
+                    <ul className="space-y-2">
+                        <li><Link className="hover:text-[#0d6efd]">Fresh food</Link></li>
+                        <li><Link className="hover:text-[#0d6efd]">Restaurant Akira</Link></li>
+                        <li><Link className="hover:text-[#0d6efd]">Espace bien-être</Link></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     );
