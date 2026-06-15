@@ -6,7 +6,7 @@ function AboutSkills() {
     const { skills } = useSkills();
 
     return (
-        <section className="py-16 px-6 bg-gray-50">
+        <section className="py-16 px-6 bg-white max-w-6xl mx-auto my-16 rounded-2xl shadow-lg border border-gray-100">
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
 
                 {/* Partie À Propos */}
