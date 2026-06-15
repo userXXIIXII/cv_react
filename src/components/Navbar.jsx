@@ -8,10 +8,11 @@ function Navbar() {
     return (
         <nav className="bg-gray-900 text-white p-4">
             <div className="container mx-auto flex justify-between">
-                <Link to="/" className="text-xl font-bold">Aarin DEB</Link>
+                <h2 className="text-xl font-bold">Aarin DEB</h2>
 
                 {/* Menu Desktop (visible sur md et plus) */}
                 <div className="hidden md:flex space-x-6">
+                    <Link to="/" className="hover:text-blue-400">ACCUEIL</Link>
                     <Link to="/services" className="hover:text-blue-400">SERVICES</Link>
                     <Link to="/realisations" className="hover:text-blue-400">RÉALISATIONS</Link>
                     <Link to="/blog" className="hover:text-blue-400">BLOG</Link>
