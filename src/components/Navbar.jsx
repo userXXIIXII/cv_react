@@ -1,22 +1,38 @@
 import {useState} from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 function Navbar() {
     
     const [isOpen, setIsOpen] = useState(false);
 
+    const getLinkClass = ({ isActive }) => 
+        `uppercase transition-colors duration-200 ${
+            isActive ? "text-white" : "text-gray-400 hover:text-white"
+        }`;
+
     return (
         <nav className="bg-[#1e1e1e] text-white p-4">
+
             <div className="container mx-auto flex justify-between">
                 <h2 className="text-xl font-bold">Aarin DEB</h2>
 
                 {/* Menu Desktop */}
                 <div className="hidden md:flex space-x-6">
-                    <Link to="/" className="hover:text-[#0d6efd] uppercase">Accueil</Link>
-                    <Link to="/services" className="hover:text-[#0d6efd] uppercase">Services</Link>
-                    <Link to="/realisations" className="hover:text-[#0d6efd] uppercase">Réalisations</Link>
-                    <Link to="/blog" className="hover:text-[#0d6efd] uppercase">Blog</Link>
-                    <Link to="/contact" className="hover:text-[#0d6efd] uppercase">Contact</Link>
+                    <NavLink to="/" className={getLinkClass}>
+                        Accueil
+                    </NavLink>
+                    <NavLink to="/services" className={getLinkClass}>
+                        Services
+                    </NavLink>
+                    <NavLink to="/realisations" className={getLinkClass}>
+                        Réalisations
+                    </NavLink>
+                    <NavLink to="/blog" className={getLinkClass}>
+                        Blog
+                    </NavLink>
+                    <NavLink to="/contact" className={getLinkClass}>
+                        Contact
+                    </NavLink>
                 </div>
             
 
@@ -31,39 +47,40 @@ function Navbar() {
             {/* Menu Mobile (visible uniquement si ouvert) */}
             {isOpen && (
                 <div className="md:hidden mt-4 flex flex-col space-y-2">
-                    <Link
+                    <NavLink
                     to="/" 
-                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    className={getLinkClass}
                     onClick={() => setIsOpen(false)}
                     >
                         ACCUEIL
-                    </Link>
-                    <Link 
+                    </NavLink>
+                    <NavLink 
                     to="/services" 
-                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    className={getLinkClass}             
                     onClick={() => setIsOpen(false)}>
                         SERVICES
-                    </Link>
-                    <Link 
+                    </NavLink>
+                    <NavLink 
                     to="/realisations" 
-                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    className={getLinkClass}                 
                     onClick={() => setIsOpen(false)}>
                         RÉALISATIONS
-                    </Link>
-                    <Link 
+                    </NavLink>
+                    <NavLink 
                     to="/blog" 
-                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    className={getLinkClass} 
                     onClick={() => setIsOpen(false)}>
                         BLOG
-                    </Link>
-                    <Link 
+                    </NavLink>
+                    <NavLink 
                     to="/contact" 
-                    className="block py-2 hover:text-[#0d6efd] active:text-[#0d6efd] uppercase" 
+                    className={getLinkClass} 
                     onClick={() => setIsOpen(false)}>
                         CONTACT
-                    </Link>
+                    </NavLink>
                 </div>
             )}
+            
         </nav>
     );
 }
