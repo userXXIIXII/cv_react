@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -21,6 +22,8 @@ function App() {
             <Route path="/realisations" element={<Realisations />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
