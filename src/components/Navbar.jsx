@@ -11,9 +11,11 @@ function Navbar() {
         }`;
 
     return (
-        <nav className="bg-[#1e1e1e] text-white p-4">
+        /* 1. L'élément parent devient un <header> sémantique */
+        <header className="bg-[#1e1e1e] text-white p-4">
 
-            <div className="container mx-auto flex justify-between">
+            {/* 2. La balise <nav> englobe le contenu de navigation (logo + liens) */}
+            <nav className="container mx-auto flex justify-between items-center">
                 <h2 className="text-xl font-bold">Aarin DEB</h2>
 
                 {/* Menu Desktop */}
@@ -35,14 +37,13 @@ function Navbar() {
                     </NavLink>
                 </div>
             
-
                 {/* Bouton Hamburger (visible sur mobile/tablette) */}
-                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Menu principal">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
                     </svg>
                 </button>
-            </div>
+            </nav>
 
             {/* Menu Mobile (visible uniquement si ouvert) */}
             {isOpen && (
@@ -56,13 +57,13 @@ function Navbar() {
                     </NavLink>
                     <NavLink 
                     to="/services" 
-                    className={getLinkClass}             
+                    className={getLinkClass}            
                     onClick={() => setIsOpen(false)}>
                         SERVICES
                     </NavLink>
                     <NavLink 
                     to="/realisations" 
-                    className={getLinkClass}                 
+                    className={getLinkClass}                
                     onClick={() => setIsOpen(false)}>
                         RÉALISATIONS
                     </NavLink>
@@ -81,7 +82,7 @@ function Navbar() {
                 </div>
             )}
             
-        </nav>
+        </header>
     );
 }
 
