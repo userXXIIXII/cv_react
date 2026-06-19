@@ -1,28 +1,28 @@
-import freshFoodImg from '../assets/fresh-food.jpg';
-import AkiraImg from '../assets/restaurant-japonais.jpg';
-import BienEtreImg from '../assets/espace-bien-etre.jpg';
+import freshFoodImg from '../assets/portfolio/fresh-food.jpg';
+import AkiraImg from '../assets/portfolio/restaurant-japonais.jpg';
+import BienEtreImg from '../assets/portfolio/espace-bien-etre.jpg';
 
 export const useProject = () => {
     const projects = [
         {
             id: 1,
-            mage: freshFoodImg,
+            image: freshFoodImg, 
             title: "Fresh food",
             description: "Réalisation d'un site avec commande en ligne.",
             technology: "PHP et MySQL"
         },
         {
             id: 2,
-            mage: AkiraImg,
+            image: AkiraImg,
             title: "Restaurant Akira",
             description: "Réalisation d'un site vitrine.",
             technology: "WordPress"
         },
         {
             id: 3,
-            mage: BienEtreImg,
+            image: BienEtreImg,
             title: "Espace bien-être",
-            description: "Réalisation d'un site vitrine pour un partricien de bien-être.",
+            description: "Réalisation d'un site vitrine pour un patricien de bien-être.",
             technology: "HTML/CSS"
         }
     ];
