@@ -1,6 +1,6 @@
 import { FaMapMarkerAlt, FaMobileAlt } from 'react-icons/fa';
 
-const ContactInfo = () => {
+const ContactDetails = () => {
     return (
         <section>
             <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2 pb-4 border-b-2 border-blue-600">
