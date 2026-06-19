@@ -26,7 +26,13 @@ function Contact() {
                     <p className='text-gray-600 text-lg'>
                         Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.
                     </p>
-                    <div className='h-1 w-48 bh-blue-600 mx-auto mt-6'></div>
+                    <div className='h-1 w-48 bg-blue-600 mx-auto mt-6'></div>
+                </div>
+
+                {/* Grille des composants */}
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20'>
+                    <ContactForm />
+                    <ContactDetails />
                 </div>
             </div>
         </main>
