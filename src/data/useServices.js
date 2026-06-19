@@ -20,7 +20,9 @@ export const useServices = () => {
                 { content: "Le " },
                 { content: "développement de sites web ", bold: true },
                 { content: "repose sur l'utilsiation des langages "},
-                { content: " HTML, CSS, JavaScript et PHP.", underline: true}
+                { content: " HTML, CSS, JavaScript", underline: true},
+                { content: " et "},
+                { content: "PHP", underline: true}
             ]
         },
         {
