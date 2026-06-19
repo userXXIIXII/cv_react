@@ -1,6 +1,6 @@
 import { FaDesktop, FaCode, FaSearchDollar } from 'react-icons/fa';
 
-const useServices = () => {
+export const useServices = () => {
     const services = [
         {
             id: 1,
@@ -13,7 +13,7 @@ const useServices = () => {
             ]
         },
         {
-            id: 1,
+            id: 2,
             Icon: FaCode,
             title: "DEVELOPPEMENT WEB",
             textSegments: [
@@ -24,7 +24,7 @@ const useServices = () => {
             ]
         },
         {
-            id: 1,
+            id: 3,
             Icon: FaSearchDollar,
             title: "REFERENCEMENT",
             textSegments: [
@@ -41,5 +41,3 @@ const useServices = () => {
     
     return { services };
 };
-
-export default useServices;
