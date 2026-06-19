@@ -20,12 +20,12 @@ const ServiceCard = ({ Icon, title, textSegments }) => {
                     // COnstruction dynamique des classes CSS
                     const styles = [
                         segment.bold ? "font-bold text-[#1e1e1e]" : "",
-                        segment.underline ? "underline decoration-blue-500 underline-offset-4" : "",
+                        segment.underline ? "underline underline-offset-4" : "",
                         segment.italic ? "italic" : ""
                     ].join(" ");
 
                     return (
-                        <span key={index} className="{styles}">
+                        <span key={index} className={styles}>
                             {segment.content}
                         </span>
                     )
