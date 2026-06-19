@@ -27,7 +27,7 @@ export const useBlog = () => {
         {
             id: 3,
             image: googleImg,
-            title: "Se positionner sur Google",
+            title: "Se positionner sur Google", 
             description: defaultText,
             date: "1 août 2022"
         },
