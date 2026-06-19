@@ -23,12 +23,13 @@ const BlogCard = ({ article }) => {
                     Lire la suite
                 </button>
 
-                {/* Pied de carte */}
-                <div className="bg-gray-50 p-4 border-t border-gray-200 mt-auto">
-                    <p className="text-gray-600 text-sm">
-                        Publié le {date}
-                    </p>
-                </div>
+                
+            </div>
+            {/* Pied de carte */}
+            <div className="bg-gray-50 p-4 border-t border-gray-200">
+                <p className="text-gray-600 text-sm">
+                    Publié le {date}
+                </p>
             </div>
 
         </div>
