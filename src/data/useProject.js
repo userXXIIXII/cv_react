@@ -25,5 +25,7 @@ export const useProject = () => {
             description: "Réalisation d'un site vitrine pour un partricien de bien-être.",
             technology: "HTML/CSS"
         }
-    ]
-}
+    ];
+
+    return { projects };
+};
