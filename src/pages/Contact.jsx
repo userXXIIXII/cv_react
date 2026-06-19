@@ -4,7 +4,7 @@ import ContactDetails from '../components/ContactDetails';
 
 function Contact() {
     return (
-        <main className='relative w-full min-h-screen flex flex-col items-center justify-center py-20 px-4 md:px-6'>
+        <main className='relative w-full min-h-screen flex flex-col items-center pt-12 pb-20 px-4 md:px-6'>
 
             {/* Arrière-plan */}
             <div 
@@ -16,7 +16,7 @@ function Contact() {
 
 
             {/* Conteneur principal */}
-            <div className='relative z-10 w-full max-w-6xl bg-white rounded-lg shadow-2xl p-8 md:p-12 lg:p-16 my-8'>
+            <div className='relative z-10 w-full max-w-6xl bg-white rounded-lg shadow-2xl p-8 md:p-12 lg:p-16 mb-8'>
 
                 {/* Titre de la section */}
                 <div className='text-center mb-12'>
