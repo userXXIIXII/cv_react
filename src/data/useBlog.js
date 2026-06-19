@@ -18,7 +18,7 @@ export const useBlog = () => {
             date: "22 août 2022"
         },
         {
-            id: 3,
+            id: 2,
             image: vendreImg,
             title: "Vendre ses produits sur le web",
             description: defaultText,

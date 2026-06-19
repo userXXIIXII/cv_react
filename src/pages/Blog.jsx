@@ -26,6 +26,16 @@ function Blog() {
                     </p>
                     <div className="h-1 w-48 bg-blue-600 mx-auto mt-6"></div>
                 </div>
+
+                {/* Cartes dynamiques des articles */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {articles.map((article) => (
+                        <BlogCard 
+                            key={article.id}
+                            article={article}
+                        />
+                    ))}
+                </div>
             </section>
         </main>
     );

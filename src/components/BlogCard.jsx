@@ -6,7 +6,7 @@ const BlogCard = ({ article }) => {
 
             {/* Image de l'article */}
             <img src={image} 
-            alt={`Image de l'article ${titre}`} 
+            alt={`Image de l'article ${title}`} 
             className="w-full h-48 object-cover"/>
 
             {/* Corps de la carte */}
