@@ -6,7 +6,7 @@ function AboutSkills() {
     const { skills } = useSkills();
 
     return (
-        <section id='about' className="scroll-mt-15 py-16 px-6 bg-white max-w-6xl mx-auto my-16 rounded-2xl shadow-lg border border-gray-100">
+        <section id='about' className="scroll-mt-16 py-16 px-6 bg-white max-w-6xl mx-auto my-16 rounded-2xl shadow-lg border border-gray-100">
             <div className='max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
 
                 {/* Partie À Propos */}
@@ -14,7 +14,7 @@ function AboutSkills() {
                     <h2 className="text-3xl font-semibold mb-4 text-[#1e1e1e]">
                         A propos
                     </h2>
-                    <div className="h-1 w-135 bg-blue-600 mb-6"></div>
+                    <div className="h-1 w-24 bg-blue-600 mb-6"></div>
                     <p className="text-gray-700 text-lg font-normal leading-relaxed">
                         Passionné par l'informatique et les nouvelles technologies, 
                         j'ai suivi une formation d'<strong>intégrateur-développeur
@@ -37,7 +37,7 @@ function AboutSkills() {
                     <img 
                     src={aboutPic}
                     alt="A propos de moi"
-                    className='rounded-lg shadow-md mb-8 w-full h-64 object-cover'
+                    className='rounded-lg shadow-md mb-8 w-full h-64 lg:h-80 object-cover'
                     />
                     <h3 className="text-2xl font-semibold mb-6 text-[#1e1e1e]">
                         Mes compétences
@@ -47,7 +47,7 @@ function AboutSkills() {
                         {skills.map((skill) => (
                             <div key={skill.name}>
                                 <div className="flex justify-between mb-2">
-                                    <span className='className="font-semibold text-sm'>
+                                    <span className='font-semibold text-sm'>
                                         {skill.name}
                                     </span>
                                     <span className='text-sm text-gray-600'>
