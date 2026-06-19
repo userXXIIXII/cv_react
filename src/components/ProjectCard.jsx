@@ -6,8 +6,11 @@ const ProjectCard = ({ project }) => {
         <div className="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden flex flex-col h-full hover:shadow-xl transition-shadow duration-300">
 
             {/* Image du projet */}
-            <img src="{image}" alt="`Image du projet ${title}`" 
-            className="w-full h-48 object-cover"/>
+            <img 
+                src={image} 
+                alt={`Image du projet ${title}`} 
+                className="w-full h-48 object-cover"
+            />
 
             {/* Contenu principal de la carte */}
             <div className="p-6 flex-grow flex flex-col items-center">

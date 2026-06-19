@@ -21,6 +21,20 @@ function Realisations() {
                     <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1e1e] mb-4">
                         PORTFOLIO
                     </h2>
+                    <p className="text-gray-600 text-lg">
+                        Voici quelques-unes de mes réalisations.
+                    </p>
+                    <div className="h-1 w-48 bg-blue-600 mx-auto mt-6"></div>
+                </div>
+
+                {/* Grille de cartes dynamiques des projets */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project) => (
+                        <ProjectCard 
+                            key={project.id}
+                            project={project}
+                        />
+                    ))}
                 </div>
             </section>
         </main>
