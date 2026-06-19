@@ -17,10 +17,10 @@ function Home() {
                     <p className="text-xl md:text-2xl font-normal mb-8">
                         Développeur web full stack
                     </p>
-                    <button 
+                    <a href='#about'
                     className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded transition duration-300 font-semibold">
                         En savoir plus
-                    </button>
+                    </a>
                 </div>
             </section>
 
