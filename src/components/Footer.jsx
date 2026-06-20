@@ -143,7 +143,7 @@ function Footer() {
             {showButton && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-6 right-6 p-6 rounded-full text-white shadow-lg transition-all duration-300 bg-[#298eff] hover:bg-[#1e73d4] z-50"
+                    className="fixed bottom-6 right-6 p-6 rounded-full text-white shadow-lg transition-all duration-300 bg-[#0d6efd] hover:bg-[#298eff] z-50"
                 >
                     <FaArrowUp />
                 </button>
