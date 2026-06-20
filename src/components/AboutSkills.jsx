@@ -14,8 +14,8 @@ function AboutSkills() {
                     <h2 className="text-3xl font-semibold mb-4 text-[#1e1e1e]">
                         A propos
                     </h2>
-                    <div className="h-1 w-24 bg-blue-600 mb-6"></div>
-                    <p className="text-gray-700 text-lg font-normal leading-relaxed">
+                    <div className="h-1 w-24 bg-[#0d6efd] mb-6"></div>
+                    <p className="text-[#444] text-lg font-normal leading-relaxed">
                         Passionné par l'informatique et les nouvelles technologies, 
                         j'ai suivi une formation d'<strong>intégrateur-développeur
                         web</strong> au CEF. Au cours de cette formation, j'ai pu
@@ -50,7 +50,7 @@ function AboutSkills() {
                                     <span className='font-semibold text-sm'>
                                         {skill.name}
                                     </span>
-                                    <span className='text-sm text-gray-600'>
+                                    <span className='text-sm text-[#444]'>
                                         {skill.percentage}%
                                     </span>
                                 </div>

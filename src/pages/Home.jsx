@@ -18,7 +18,7 @@ function Home() {
                         Développeur web full stack
                     </p>
                     <a href='#about'
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded transition duration-300 font-semibold">
+                    className="bg-[#0d6efd] hover:bg-[#0d6efd] text-white px-8 py-3 rounded transition duration-300 font-semibold">
                         En savoir plus
                     </a>
                 </div>

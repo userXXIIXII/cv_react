@@ -23,10 +23,10 @@ function Contact() {
                     <h2 className='text-4xl md:text-5xl font-semibold text-[#1e1e1e] mb-4'>
                         ME CONTACTER
                     </h2>
-                    <p className='text-gray-600 text-lg'>
+                    <p className='text-[#444] text-lg'>
                         Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.
                     </p>
-                    <div className='h-1 w-48 bg-blue-600 mx-auto mt-6'></div>
+                    <div className='h-1 w-48 bg-[#0d6efd] mx-auto mt-6'></div>
                 </div>
 
                 {/* Grille des composants */}

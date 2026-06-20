@@ -15,11 +15,11 @@ const BlogCard = ({ article }) => {
                     {title}
                 </h3>
 
-                <p className="text-gray-600 mb-6 flex-grow">
+                <p className="text-[#444] mb-6 flex-grow">
                     {description}
                 </p>
 
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300">
+                <button className="bg-[#0d6efd] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#0d6efd] transition-colors duration-300">
                     Lire la suite
                 </button>
 
@@ -27,7 +27,7 @@ const BlogCard = ({ article }) => {
             </div>
             {/* Pied de carte */}
             <div className="bg-gray-50 p-4 border-t border-gray-200">
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#444] text-sm">
                     Publié le {date}
                 </p>
             </div>
