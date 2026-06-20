@@ -13,7 +13,7 @@ const GitHubProfileCard = ({ profile }) => {
             <img 
             src={profile.avatar_url} 
             alt={`Avatar de ${profile.login}`} 
-            className="w-48 h-auto object-cover mb-4"
+            className="w-48 h-48 object-cover mb-4 rounded-full border-2 border-gray-200"
             />
 
             {profile.bio && (
@@ -26,7 +26,7 @@ const GitHubProfileCard = ({ profile }) => {
                 <p>Abonnés : {profile.followers}</p>
                 <p>Abonnements : {profile.following}</p>
                 <p>Crée le : {profile.created_at}</p>
-                <p>Modifié le : {profile.profile.updated_at}</p>
+                <p>Modifié le : {profile.updated_at}</p>
                 <p>
                     URL repositories :{' '}
                     <a 

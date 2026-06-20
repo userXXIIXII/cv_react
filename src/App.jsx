@@ -6,6 +6,7 @@ import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import MentionsLegales from './pages/MentionsLegales'
+import GithubProfile from "./pages/GithubProfile";
 import NotFound from "./pages/NotFound";
 import NotFoundProfile from "./pages/NotFoundProfile"
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentionsLegales" element={<MentionsLegales />} />
+            <Route path="/githubProfile" element={<GithubProfile />} />
 
             {/* Route ciblée par le navigate('/not-found') */}
             <Route path="/not-found" element={<NotFound />} />
