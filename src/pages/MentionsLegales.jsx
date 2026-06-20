@@ -119,6 +119,34 @@ function MentionsLegales() {
                             </div>
                         )}
                 </div>
+                
+                {/* Section 3 : Crédits */}
+                <div>
+                    <button
+                    onClick={() => toggleSection('credits')}
+                    className={`w-full px-6 py-4 flex justify-between items-center transition-colors duration-200 ${
+                        activeSection === 'credits' ? 'bg-blue-50 text-blue-600' : 'bg-white text-gray-800 hover:bg-gray-50'
+                    }`}>
+                        <span className='font-medium'>Crédits</span>
+                        {activeSection === 'credits' ? <FaChevronUp /> : <FaChevronDown />}
+                    </button>
+
+                    {/* Contenu Crédits */}
+                    {activeSection === 'credits' && (
+                        <div className='p-6 text-gray-700 space-y-4'>
+                            <h3 className='text-2xl font-semibold text-[#1e1e1e] mb-4'>
+                                Crédits
+                            </h3>
+                            <p>
+                                Site développé par Aarin DEB, étudiant du CEF.
+                            </p>
+                            <p>
+                                Les images libres de droit sont issues du site <a href="https://pixabay.com/fr/" target="_blank" rel="noopener noreferrer" className='text-blue-600 hover:underline'>Pixabay</a>.
+                            </p>
+                        </div>
+                    )}
+                </div>
+                
             </div>
         </main>
     )
