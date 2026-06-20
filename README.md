@@ -15,9 +15,9 @@ Bienvenue sur mon portfolio personnel. Ce projet est une application web moderne
 - GitHub API
 
 ## 🔗 Démo
-Vous pouvez consulter la version en ligne ici : https://www.youtube.com/watch?v=EE4RwymA8w4
+Vous pouvez consulter la version en ligne ici : https://cv-react-ten-gamma.vercel.app/
 
 ## 🛠 Installation
-1. `git clone https://github.com/votre-utilisateur/votre-projet.git`
+1. `git clone https://github.com/votre-utilisateur/votre-projet.git` 
 2. `npm install`
 3. `npm run dev`
