@@ -6,7 +6,7 @@ function Services() {
     const { services } = useServices();
 
     return (
-        <main className="w-full min-h-screen flex flex-col bg-gray-50">
+        <main className="w-full min-h-screen flex flex-col bg-[#EEE]-50">
             
             {/* 1. La Bannière (Pleine largeur, hauteur réduite, sans texte) */}
             <div 

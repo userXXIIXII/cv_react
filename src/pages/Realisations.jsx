@@ -7,7 +7,7 @@ function Realisations() {
     const { projects } = useProject();
 
     return (
-        <main className="w-full min-h-screen flex flex-col bg-gray-50">
+        <main className="w-full min-h-screen flex flex-col bg-[#EEE]">
 
             {/* 1. La bannière */}
             <div className="w-full h-32 md:h-40 bg-cover bg-center"

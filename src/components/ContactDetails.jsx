@@ -23,7 +23,7 @@ const ContactDetails = () => {
             </div>
 
             {/* Intégration de GOggle Maps */}
-            <div className='w-full h-64 md:h-80 bg-gray-200 rounded-md overflow-hidden shadow-inner'>
+            <div className='w-full h-64 md:h-80 bg-[#EEE] rounded-md overflow-hidden shadow-inner'>
                 <iframe 
                 src="https://maps.google.com/maps?q=40%20avenue%20de%20la%20Division%20Leclerc,%2094230%20Cachan,%20France&t=&z=14&ie=UTF8&iwloc=&output=embed" 
                 width="100%"

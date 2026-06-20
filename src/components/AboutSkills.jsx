@@ -54,7 +54,7 @@ function AboutSkills() {
                                         {skill.percentage}%
                                     </span>
                                 </div>
-                                <div className="w-full bg-gray-200 h-3 rounded-full overflow-hidden">
+                                <div className="w-full bg-[#EEE] h-3 rounded-full overflow-hidden">
                                     <div 
                                     className={`${skill.color} h-3 rounded-full transition-all duration-500`}
                                     style={{ width: `${skill.percentage}%` }}>

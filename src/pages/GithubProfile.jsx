@@ -11,11 +11,11 @@ const GithubProfile = () => {
             
             {loading ? (
                 <div className="animate-pulse flex flex-col items-center space-y-6 w-full max-w-2xl">
-                    <div className="h-10 bg-gray-200 rounded w-48"></div>
-                    <div className="h-8 bg-gray-200 rounded w-64"></div>
-                    <div className="w-48 h-48 bg-gray-200 rounded-full"></div>
-                    <div className="h-4 bg-gray-200 rounded w-3/4 mt-8"></div>
-                    <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                    <div className="h-10 bg-[#EEE] rounded w-48"></div>
+                    <div className="h-8 bg-[#EEE] rounded w-64"></div>
+                    <div className="w-48 h-48 bg-[#EEE] rounded-full"></div>
+                    <div className="h-4 bg-[#EEE] rounded w-3/4 mt-8"></div>
+                    <div className="h-4 bg-[#EEE] rounded w-1/2"></div>
                 </div>
             ) : (
                 profileData && <GithubProfileCard profile={profileData} />
