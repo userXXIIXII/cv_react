@@ -24,7 +24,11 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentionsLegales" element={<MentionsLegales />} />
 
-            <Route path="*" element={<NotFound />} />
+            {/* Route ciblée par le navigate('/not-found') */}
+            <Route path="/not-found" element={<NotFound />} />
+
+            {/* Route universelle pour toutes les autres erreurs 404 */}
+            <Route path="*" element={<NotFound />} />           
           </Routes>
         </main>
         <Footer />
