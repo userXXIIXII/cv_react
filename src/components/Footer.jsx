@@ -1,7 +1,23 @@
+import { useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaArrowUp } from "react-icons/fa";
 
 function Footer() {
+
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowButton(window.scrollY > 300);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth'});
+    };
+
     return (
         <footer className="bg-[#EEE] text-[#444] pt-10">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10">
@@ -122,6 +138,16 @@ function Footer() {
             <div className="bg-[#1e1e1e] text-white text-center py-4 text-sm border-b-20 border-white">
                 © Designed by Aarin DEB
             </div>
+
+            {/* Bouton retour en haut dynamique */}
+            {showButton && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-6 right-6 p-6 rounded-full text-white shadow-lg transition-all duration-300 bg-[#298eff] hover:bg-[#1e73d4] z-50"
+                >
+                    <FaArrowUp />
+                </button>
+            )}
             
         </footer>
     );
