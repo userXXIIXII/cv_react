@@ -22,10 +22,10 @@ function Services() {
                     <h2 className="text-3xl md:text-4xl font-semibold text-[#1e1e1e] mb-4">
                         MON OFFRE DE SERVICES
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-[#444] text-lg">
                         Voici les prestations sur lesquelles je peux intervenir.
                     </p>
-                    <div className="h-1 w-48 bg-blue-600 mx-auto mt-4"></div>
+                    <div className="h-1 w-48 bg-[#0d6efd] mx-auto mt-4"></div>
                 </div>
 
                 {/* Grille des cartes */}

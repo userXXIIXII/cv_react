@@ -3,21 +3,21 @@ import { FaMapMarkerAlt, FaMobileAlt } from 'react-icons/fa';
 const ContactDetails = () => {
     return (
         <section>
-            <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2 pb-4 border-b-2 border-blue-600">
+            <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2 pb-4 border-b-2 border-[#0d6efd]">
                 Mes coordonnées
             </h3>
 
-            <div className="mt-8 flex flex-col space-y-4 mb-8 text-gray-700">
+            <div className="mt-8 flex flex-col space-y-4 mb-8 text-[#444]">
 
                 {/* Adresse */}
                 <p className="flex items-start">
-                    <FaMapMarkerAlt className='w-5 h-5 text-gray-800 mr-3 flex-shrink-0' />
+                    <FaMapMarkerAlt className='w-5 h-5 text-[#444] mr-3 flex-shrink-0' />
                     40 Avenue de la Division Leclerc, 94230 Cachan, France
                 </p>
 
                 {/* Téléphone */}
                 <p className='flex items-center text-lg'>
-                    <FaMobileAlt className='w-5 h-5 text-gray-800 mr-3 flex-shrink-0' />
+                    <FaMobileAlt className='w-5 h-5 text-[#444] mr-3 flex-shrink-0' />
                     06 50 24 13 97
                 </p>
             </div>

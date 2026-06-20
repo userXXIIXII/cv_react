@@ -7,7 +7,7 @@ function Navbar() {
 
     const getLinkClass = ({ isActive }) => 
         `uppercase transition-colors duration-200 ${
-            isActive ? "text-white" : "text-gray-400 hover:text-white"
+            isActive ? "text-white" : "text-[#444] hover:text-white/80"
         }`;
 
     return (
