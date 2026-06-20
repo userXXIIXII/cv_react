@@ -7,7 +7,7 @@ function Home() {
             <section className="relative h-screen w-full flex items-center justify-center text-center text-white">
                 <div className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${homeBackground})`}}>
-                    <div className="absolute inset-0 bg-black/60"></div>
+                    <div className="absolute inset-0 bg-black/30"></div>
                 </div>
 
                 <div className="relative z-10 px-4">
