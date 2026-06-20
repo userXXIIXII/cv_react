@@ -1,0 +1,46 @@
+const GitHubProfileCard = ({ profile }) => {
+    return (
+        <div className="flex flex-col items-center justify-center text-center space-y-4 w-full max-w-4xl mx-auto py-8">
+
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+                Github user
+            </h1>
+
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+                {profile.name || profile.login}
+            </h2>
+
+            <img 
+            src={profile.avatar_url} 
+            alt={`Avatar de ${profile.login}`} 
+            className="w-48 h-auto object-cover mb-4"
+            />
+
+            {profile.bio && (
+                <p className="text-lg text-gray-800 max-w-2xl mt-4 mb-2">
+                    {profile.bio}
+                </p>
+            )}
+
+            <div className="flex flex-col space-y-3 mt-4 text-lg text-gray-800">
+                <p>Abonnés : {profile.followers}</p>
+                <p>Abonnements : {profile.following}</p>
+                <p>Crée le : {profile.created_at}</p>
+                <p>Modifié le : {profile.profile.updated_at}</p>
+                <p>
+                    URL repositories :{' '}
+                    <a 
+                    href={profile.repos_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline">
+                        {profile.repos_url}
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    );
+};
+
+export default GitHubProfileCard;
