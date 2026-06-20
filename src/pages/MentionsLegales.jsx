@@ -26,7 +26,7 @@ function MentionsLegales() {
     };
 
     return (
-        <main className="w-full min-h-screen flex flex-col bg-gray-50 pt-24 pb-20 px-4 md:px-6">
+        <main className="w-full flex-grow flex flex-col bg-gray-50 py-10 px-4 md:px-6">
 
             {/* Conteneur principal */}
             <div className='w-full max-w-4xl mx-auto'>
@@ -146,7 +146,6 @@ function MentionsLegales() {
                         </div>
                     )}
                 </div>
-                
             </div>
         </main>
     )
