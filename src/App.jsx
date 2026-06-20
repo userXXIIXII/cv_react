@@ -6,7 +6,9 @@ import Realisations from "./pages/Realisations";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import MentionsLegales from './pages/MentionsLegales'
+import GithubProfile from "./pages/GithubProfile";
 import NotFound from "./pages/NotFound";
+import NotFoundProfile from "./pages/NotFoundProfile"
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,8 +25,13 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentionsLegales" element={<MentionsLegales />} />
+            <Route path="/githubProfile" element={<GithubProfile />} />
 
-            <Route path="*" element={<NotFound />} />
+            {/* Route ciblée par le navigate('/not-found') */}
+            <Route path="/not-found" element={<NotFound />} />
+
+            {/* Route universelle pour toutes les autres erreurs 404 */}
+            <Route path="*" element={<NotFoundProfile />} />           
           </Routes>
         </main>
         <Footer />

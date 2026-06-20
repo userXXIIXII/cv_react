@@ -14,9 +14,7 @@ function Footer() {
                 
                     <div className="flex space-x-4 mt-4">
 
-                        <a href="https://github.com/userXXIIXII" 
-                        target="_blank" 
-                        rel="noreferrer" 
+                        <a href="/githubProfile" 
                         className="text-[#444] hover:text-[#0d6efd] text-2xl">
                             <FaGithub />
                         </a>
