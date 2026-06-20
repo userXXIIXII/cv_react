@@ -12,10 +12,12 @@ import NotFoundProfile from "./pages/NotFoundProfile"
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+        <ScrollToTop />
         <Navbar />
         <main className="flex-grow">
           <Routes>
