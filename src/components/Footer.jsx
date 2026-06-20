@@ -68,6 +68,11 @@ function Footer() {
                                 <span className="text-[#0d6efd] mr-2">›</span>Contact
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/MentionsLegales" className="hover:text-[#0d6efd]">
+                                <span className="text-[#0d6efd] mr-2">›</span>Mentions légales
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
