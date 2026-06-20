@@ -38,6 +38,49 @@ function MentionsLegales() {
                     </h2>
                 </div>
             </div>
+
+            {/* Accordéon */}
+            <div className='bg-white rounded-md shadow-md border border-gray-200 overflow-hidden'>
+
+                {/* Section 1 : éditeur du site */}
+                <div className='border-b border-gray-200'>
+                    <button
+                        onClick={() => toggleSection('editeur')}
+                        className= {`w-full px-6 py-4 flex justify-between items-center transition-colors duration-200 ${
+                        activeSection === 'editeur' ? 'bg-blue-50 text-blue-600' : 'bg-white text-gray-800 hover:bg-gray-50'
+                        }`} >
+                        <span className='font-medium'>Editeur du site</span>
+                        {activeSection === 'editeur' ? <FaChevronUp /> : <FaChevronDown />}
+                    </button>
+
+                    {/* Contenu Editeur */}
+                    {activeSection === 'editeur' && (
+                        <div className='p-6 text-gray-700'>
+                            <h3 className='text-2xl font-semibold text-[#1e1e1e] mb-4'>
+                                Aarin DEB
+                            </h3>
+                            <div className='space-y-2'>
+                                <p className='flex items-start'>
+                                    <FaMapMarkerAlt className='w-5 h-5 mr-3 mt-1 text-gray-800 flex-shrink-0' />
+                                    40 Avenue de la Division Leclerc,<br />94230 Cachan, France
+                                </p>
+                                <p className='flex items-center'>
+                                    <FaMobileAlt className='w-5 h-5 mr-3 mt-1 text-gray-800 flex-shrink-0' />
+                                    06 50 24 13 97
+                                </p>
+                                <p className='flex items-center text-blue-600'>
+                                    <FaEnvelope className='w-5 h-5 mr-3 mt-1 text-gray-800 flex-shrink-0' />
+                                    <a 
+                                    href="mailto:aarindeb2003@gmail.com" 
+                                    className='hover:underline'>
+                                        aarindeb2003@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
         </main>
     )
 };
