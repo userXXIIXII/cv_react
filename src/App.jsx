@@ -7,6 +7,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import MentionsLegales from './pages/MentionsLegales'
 import NotFound from "./pages/NotFound";
+import NotFoundProfile from "./pages/NotFoundProfile"
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -28,7 +29,7 @@ function App() {
             <Route path="/not-found" element={<NotFound />} />
 
             {/* Route universelle pour toutes les autres erreurs 404 */}
-            <Route path="*" element={<NotFound />} />           
+            <Route path="*" element={<NotFoundProfile />} />           
           </Routes>
         </main>
         <Footer />
