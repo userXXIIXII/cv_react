@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
                     {description}
                 </p>
                 <button 
-                className="px-6 py-2 border-2 border-[#0d6efd] text-[#0d6efd] text-lg font-semibold rounded-lg hover:bg-[#0d6efd] hover:text-white transition-colors duration-300">
+                className="px-6 py-2 border-2 border-[#0d6efd] text-[#0d6efd] text-lg font-semibold rounded-lg cursor-pointer hover:bg-[#0d6efd] hover:text-white transition-colors duration-300">
                     Voir
                 </button>
             </div>
