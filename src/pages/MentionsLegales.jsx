@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaMapMarkerAlt, FaMobileAlt, FaEnvelope, FaGLobe, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaMobileAlt, FaEnvelope, FaGlobe, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 function MentionsLegales() {
 
@@ -11,7 +11,7 @@ function MentionsLegales() {
     useEffect(() => {
         const meta = document.createElement('meta');
         meta.name = 'robots',
-        meta;content = 'nonindex, nofollow';
+        meta.content = 'nonindex, nofollow';
         document.head.appendChild(meta);
 
         // Retirer la balise audn on quitte la page
@@ -40,4 +40,6 @@ function MentionsLegales() {
             </div>
         </main>
     )
-}
+};
+
+export default MentionsLegales;
