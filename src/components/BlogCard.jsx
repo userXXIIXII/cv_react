@@ -26,7 +26,7 @@ const BlogCard = ({ article }) => {
                 
             </div>
             {/* Pied de carte */}
-            <div className="bg-gray-50 p-4 border-t border-gray-200">
+            <div className="bg-[#EEE] p-4 border-t border-gray-200">
                 <p className="text-[#444] text-sm">
                     Publié le {date}
                 </p>

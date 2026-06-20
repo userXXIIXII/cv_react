@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
             </div>
 
             {/* Pied de carte */}
-            <div className="bg-gray-100 p-4 border-t border-gray-200 my-auto">
+            <div className="bg-[#EEE] p-4 border-t border-gray-200 my-auto">
                 <p className="text-[#444] text-center text-lg">
                     {`Site réalisé avec ${technology}`}
                 </p>

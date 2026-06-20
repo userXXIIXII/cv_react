@@ -17,10 +17,10 @@ function MentionsLegales() {
     };
 
     const activeClasses = (section) =>
-        activeSection === section ? 'bg-[#0d6efd] text-[#0d6efd]' : 'bg-white text-[#444] hover:bg-gray-50';
+        activeSection === section ? 'bg-[#0d6efd] text-[#0d6efd]' : 'bg-white text-[#444] hover:bg-[#EEE]';
 
     return (
-        <main className="w-full flex-grow flex flex-col bg-gray-50 py-10 px-4 md:px-6">
+        <main className="w-full flex-grow flex flex-col bg-[#EEE] py-10 px-4 md:px-6">
             <div className='w-full max-w-4xl mx-auto'>
                 <div className='text-center mb-12'>
                     <h2 className='text-4xl md:text-5xl font-semibold text-[#1e1e1e] mb-4'>

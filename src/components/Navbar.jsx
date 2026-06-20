@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 function Navbar() {
     
@@ -16,7 +16,9 @@ function Navbar() {
 
             {/* 2. La balise <nav> englobe le contenu de navigation (logo + liens) */}
             <nav className="container mx-auto flex justify-between items-center">
-                <h2 className="text-xl font-bold">Aarin DEB</h2>
+                <Link to="/" className="hover:opacity-80 transition-opacity">
+                    <h2 className="text-xl font-bold">Aarin DEB</h2>
+                </Link>
 
                 {/* Menu Desktop */}
                 <div className="hidden md:flex space-x-6">
