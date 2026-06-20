@@ -80,6 +80,45 @@ function MentionsLegales() {
                         </div>
                     )}
                 </div>
+
+                {/* Section 2 : Hébergeur */}
+                <div className='border-b border-gray-200'>
+                    <button 
+                            onClick={() => toggleSection('hebergeur')}
+                            className={`w-full px-6 py-4 flex justify-between items-center transition-colors duration-200 ${
+                                activeSection === 'hebergeur' ? 'bg-blue-50 text-blue-600' : 'bg-white text-gray-800 hover:bg-gray-50'
+                            }`}
+                        >
+                            <span className="font-medium">Hébergeur</span>
+                            {activeSection === 'hebergeur' ? <FaChevronUp /> : <FaChevronDown />}
+                        </button>
+
+                        {/* Contenu Hébergeur */}
+                        {activeSection === 'hebergeur' && (
+                            <div className='p-6 text-gray-700'>
+                                <h3 className='text-2xl font-semibold text-[#1e1e1e] mb-4'>
+                                    Vercel Inc.
+                                </h3>
+                                <div className='space-y-2'>
+                                    <p>
+                                        440 N Barranca Ave #4133<br />
+                                        Convina, CA 91723<br />
+                                        États-Unis
+                                    </p>
+                                    <p className='flex items-center text-blue-600 mt-4'>
+                                        <FaGlobe className='w-5 h-5 mr-3 text-gray-800 flex-shrink-0' />
+                                        <a 
+                                        href="https:/vercel.com" 
+                                        target="_blank"
+                                        rel='noopener noreferrer'
+                                        className='hover:underline'>
+                                            www.vercel.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                </div>
             </div>
         </main>
     )
