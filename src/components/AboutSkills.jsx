@@ -24,7 +24,7 @@ function AboutSkills() {
 
                         Basé à Paris, je suis en recherche d'une alternance au sein
                         d'une agence digitale pour consolider ma formation de 
-                        <strong>développeur web full stack</strong>. <br /><br />
+                        <strong> développeur web full stack</strong>. <br /><br />
 
                         J'accorde une attention particulière à la qualité du code que
                         j'écris et je respecte les bonnes pratiques du web.
