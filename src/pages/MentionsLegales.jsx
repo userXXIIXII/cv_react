@@ -17,7 +17,7 @@ function MentionsLegales() {
     };
 
     const activeClasses = (section) =>
-        activeSection === section ? 'bg-[#0d6efd] text-[#0d6efd]' : 'bg-white text-[#444] hover:bg-[#EEE]';
+        activeSection === section ? 'bg-[#0d6efd]/15 text-[#0d6efd]' : 'bg-white text-[#444] hover:bg-[#EEE]';
 
     return (
         <main className="w-full flex-grow flex flex-col bg-[#EEE] py-10 px-4 md:px-6">
@@ -35,7 +35,7 @@ function MentionsLegales() {
                     <button
                         onClick={() => toggleSection('editeur')}
                         className={`w-full px-6 py-4 flex justify-between items-center transition-colors duration-200 ${activeClasses('editeur')}`}>
-                        <span className='font-medium'>Editeur du site</span>
+                        <span className='font-medium'>Éditeur du site</span>
                         {activeSection === 'editeur' ? <FaChevronUp /> : <FaChevronDown />}
                     </button>
 
