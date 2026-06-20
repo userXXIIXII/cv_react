@@ -19,7 +19,7 @@ const BlogCard = ({ article }) => {
                     {description}
                 </p>
 
-                <button className="bg-[#0d6efd] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#0d6efd] transition-colors duration-300">
+                <button className="bg-[#0d6efd] text-white px-4 py-2 rounded-lg font-medium cursor-pointer hover:bg-[#0d6efd]/60 transition-colors duration-300">
                     Lire la suite
                 </button>
 
